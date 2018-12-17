@@ -11,7 +11,7 @@ def get_ciity_list():
         url = 'http://www.a-hospital.com/w/%E5%85%A8%E5%9B%BD%E5%8C%BB%E9%99%A2%E5%88%97%E8%A1%A8'
 
         response = urllib.request.urlopen(url)
-        print("have response")
+        #print("have response")
         req_html = response.read().decode('utf-8')
         print("have request")
         fulllist = re.findall(r'<p><b>(.*?)\n<h3><span', req_html,re.S)
