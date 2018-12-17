@@ -31,5 +31,6 @@ def get_ciity_list():
         print(len(key_word))
         return(key_word)
     except:
+        print("timeout forcing")
         time.sleep(3)
         get_ciity_list()
